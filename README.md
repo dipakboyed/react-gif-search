@@ -1,4 +1,7 @@
-<<<<<<< HEAD
+# react-gif-search
+fiddling with code while I learn React Js through https://blog.tighten.co/react-101-building-a-gif-search-engine
+I'm deliberately not cloning the steps and final solution from https://github.com/tightenco/react-gif-search-engine because the best way to learn is to do each step myself
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
@@ -1243,8 +1246,3 @@ It is reported that `npm run build` can fail on machines with no swap space, whi
 ## Something Missing?
 
 If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/facebookincubator/create-react-app/issues) or [contribute some!](https://github.com/facebookincubator/create-react-app/edit/master/packages/react-scripts/template/README.md)
-=======
-# react-gif-search
-fiddling with code while I learn React Js through https://blog.tighten.co/react-101-building-a-gif-search-engine
-I'm deliberately not cloning the steps and final solution from https://github.com/tightenco/react-gif-search-engine because the best way to learn is to do each step myself
->>>>>>> 1f800863469abd0cd3548020976ee8dcb0b0f61e
