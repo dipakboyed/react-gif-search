@@ -1,6 +1,7 @@
 // import is ES6 version of require
 import React from 'react'; // base React library includes create/manage components
 import ReactDOM from 'react-dom'; // React DOM to manipulate browser elements
+import SearchBar from './components/SearchBar';
 
 // class is new in ES6: below is ssame as var App = React.createClass({}); in ES5.
 class App extends React.Component {
@@ -18,7 +19,7 @@ class App extends React.Component {
     */
     return (
       <div class="greeting">
-        <p class="greeting-text">Hello World!</p>
+        <SearchBar />
       </div>
     )
   }
