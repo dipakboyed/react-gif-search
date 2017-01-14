@@ -1,9 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
+// import is ES6 version of require
+import React from 'react'; // base React library includes create/manage components
+import ReactDOM from 'react-dom'; // React DOM to manipulate browser elements
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+// class is new in ES6: below is ssame as var App = React.createClass({}); in ES5.
+class App extends React.Component {
+  render() { // output JSX
+    /* Below JSX is equivalent of the following javascript:
+     return React.createElement(
+         "div",
+         { "class": "greeting"},
+         React.createElement(
+            "p",
+            { "class" : "greetingtext"},
+            "Hello World!"
+          )
+     );
+    */
+    return (
+      <div class="greeting">
+        <p class="greeting-text">Hello World!</p>
+      </div>
+    )
+  }
+}
+
+// links the App component with he empty < div id="app"></div> in index.html
+ReactDOM.render(<App />, document.getElementById('app')
 );
