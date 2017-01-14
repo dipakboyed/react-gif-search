@@ -18,10 +18,14 @@ class App extends React.Component {
      );
     */
     return (
-      <div class="greeting">
-        <SearchBar />
+      <div>
+        <SearchBar onTermChange={this.handleTermChange}/>
       </div>
-    )
+    );
+  }
+
+  handleTermChange(term) {
+    console.log(term);
   }
 }
 

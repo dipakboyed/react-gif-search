@@ -1,10 +1,24 @@
 import React from 'react';
 
 class SearchBar extends React.Component {
+
+    constructor(props) {
+        super(props); //props are properties passed down from parent class
+        this.state = { term: ''}
+    }
+
+    onInputChange(term) {
+        this.setState({term});
+        this.props.onTermChange(term); //props allows passing data to parent component App
+    }
+
     render () {
         return (
-            <div>
-                <h1> Search! </h1>
+            <div className="search">
+                {/*
+                 fat-arrow function e=> this.onInputChange(e.target.value) is shortcut for function(e) {this.onInputChange(e.target.value)}
+                */}
+                <input onChange={event => this.onInputChange(event.target.value)}/>
             </div>
         );
     }
