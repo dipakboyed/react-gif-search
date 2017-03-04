@@ -3,10 +3,21 @@ import React from 'react'; // base React library includes create/manage componen
 import ReactDOM from 'react-dom'; // React DOM to manipulate browser elements
 import SearchBar from './components/SearchBar';
 
-// class is new in ES6: below is ssame as var App = React.createClass({}); in ES5.
+// class is new in ES6: below is same as var App = React.createClass({}); in ES5.
 class App extends React.Component {
-  render() { // output JSX
-    /* Below JSX is equivalent of the following javascript:
+
+  handleTermChange(term) {
+    console.log(term);
+  }
+
+  render() { // render function outputs JSX.
+    /*for e.g. JSX like the folowwing will be output:
+    return (
+      <div className="greeting">
+        <p className="greetingtext">Hello World!</p>
+      </div>
+    )
+    for the equivalent of the following javascript:
      return React.createElement(
          "div",
          { "class": "greeting"},
@@ -22,10 +33,6 @@ class App extends React.Component {
         <SearchBar onTermChange={this.handleTermChange}/>
       </div>
     );
-  }
-
-  handleTermChange(term) {
-    console.log(term);
   }
 }
 
